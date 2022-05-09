@@ -1,0 +1,64 @@
+.menu{
+    width: 220px;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 7px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.img-usuario {
+    border-radius: 50%;
+}
+
+.sessao{
+    width: 60vw;
+    display: block;
+    float: left;
+}
+
+.video{
+    background-image: url("imagens/video.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    width: 50vw;
+    height: 50vh;
+}
+
+.detalhes{
+    width: 15vw;
+    display: block;
+    float: right;
+}
+
+.botao{
+   padding: 6px 12px;
+   background-color: #ED7839;
+   color: #ffffff;
+   border-radius: 4px;
+   border-color: transparent;
+   align-items: center;
+   vertical-align: middle;
+   height: 31px;
+}
+
+.download{
+   font-family: 'Roboto';
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.estrela{
+    font-size: 19px;
+}
+
+.resumo{
+    width: 80vw;
+}
