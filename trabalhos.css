@@ -1,64 +1,540 @@
-.menu{
+html body {
+    font-family: 'Roboto';
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    cursor: default;
+}
+
+button.btn,
+button.btn:focus,
+button.btn:hover {
+    box-shadow: none;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.fonte {
+    font-family: 'Quicksand';
+}
+
+.cor {
+    color: #ED7839;
+}
+
+div.menu {
     width: 220px;
+    box-shadow: 0px 0px 10px #00000040;
+    z-index: 1;
 }
 
-.menu ul{
-    list-style-type: none;
+div.menu nav {
+    height: 33px;
+    border-bottom: 2px solid #E7E7E7;
+    align-content: flex-start;
 }
 
-.menu li {
-    padding: 7px;
+nav.trabalhos {
+    background-color: #FDF1EB;
 }
 
-.menu a {
+div.selecionado {
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(#FFB455 0%, #ED7839 100%);
+}
+
+div.menu a,
+div.menu a:hover,
+div.menu a:focus {
     text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #725C5C;
+    padding: 0;
+    margin: 7px 24px;
 }
 
-.img-usuario {
+div.slaca {
+    height: 68px;
+    background: linear-gradient(#FFB354 0%, #EE7A3A 100%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+div.slaca h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+div.content {
+    margin: 45px;
+}
+
+header.cabecalho {
+    background-color: #FDF1EB;
+}
+
+div.titulo {
+    color: #725C5C;
+    margin-left: 36px;
+    margin-top: 5px;
+}
+
+div.titulo h1 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+}
+
+div.titulo h2,
+div.titulo p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+div.idiomas button,
+div.idiomas button:focus {
+    width: 97px;
+    height: 34px;
+    font-size: 14px;
+    color: #333333;
+    box-shadow: none;
+    margin: 17px 22px 17px 110px;
+    border: 1px solid #CCCCCC;
+}
+
+div.usuario {
+    width: 209px;
+    color: #333333;
+    margin: 17px 35px 0 0;
+    text-align: right;
+}
+
+.bem-vindo {
+    margin: 0 6px 0 0;
+}
+
+div.usuario h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+div.usuario p {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+img.img-usuario {
     border-radius: 50%;
 }
 
-.sessao{
-    width: 60vw;
+span.notificacao {
+    align-items: center;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 0 3px 0 3px;
+    margin-top: 6px;
+    margin-left: -4px;
+}
+
+div.video {
     display: block;
     float: left;
+    margin-right: 31px;
 }
 
-.video{
-    background-image: url("imagens/video.png");
-    background-repeat:no-repeat;
-    background-size: 100%;
-    width: 50vw;
-    height: 50vh;
+div.video img {
+    width: 100%;
+    margin-top: 23px;
 }
 
-.detalhes{
-    width: 15vw;
+div.video h3 {
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    Line-height: 25px;
+}
+
+div.lateral {
+    min-width: 242px;
+    max-width: 450px;
     display: block;
     float: right;
 }
 
-.botao{
-   padding: 6px 12px;
-   background-color: #ED7839;
-   color: #ffffff;
-   border-radius: 4px;
-   border-color: transparent;
-   align-items: center;
-   vertical-align: middle;
-   height: 31px;
+.btn.solid,
+.btn.solid:hover,
+.btn.solid:focus {
+    background-color: #ED7839;
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
 
-.download{
-   font-family: 'Roboto';
-   font-size: 16px;
-   font-weight: 500;
+.btn.solid img {
+    margin-right: 5px;
 }
 
-.estrela{
-    font-size: 19px;
+p.citar {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: right;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
 }
 
-.resumo{
-    width: 80vw;
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E5E5E5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BFBFBF;
+}
+
+div.detalhes {
+    height: 439px;
+    border: 1px solid #ECECEC;
+}
+
+div.cards h3 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #4E4E4E;
+    background-color: #FDF1EB;
+    padding: 10px 15px 10px 15px;
+    border-bottom: 1px solid #ECECEC;
+    margin: 0;
+}
+
+div.detalhes p {
+    height: 364px;
+    margin: 15px 6px 15px 15px;
+    padding-right: 6px;
+    overflow-y: scroll;
+}
+
+span.texto1 {
+    font-size: 12px;
+    line-height: 16.8px;
+}
+
+span.texto2 {
+    font-size: 12px;
+    line-height: 14.4px;
+    font-weight: 700;
+}
+
+span.texto3 {
+    font-size: 14px;
+    line-height: 22.75px;
+    font-weight: 700;
+}
+
+span.texto4 {
+    font-size: 14px;
+    line-height: 16.8px;
+}
+
+span.texto5 {
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #808080;
+}
+
+div.resumo {
+    width: 100%;
+    margin-top: 30px;
+}
+
+div.expandivel p {
+    font-size: 14px;
+    line-height: 22.75px;
+    cursor: pointer;
+}
+
+div.ver-mais span {
+    font-weight: 700;
+    line-height: 21.33px;
+}
+
+div.discussoes {
+    margin-top: 30px;
+    padding-bottom: 7.5px;
+}
+
+div.topico {
+    margin: 15px 15px 0;
+    padding-bottom: 7.5px;
+}
+
+div.topico h3 {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+div.icones {
+    justify-content: center;
+    margin: 27px 0 35px 0;
+}
+
+div.frase {
+    margin-bottom: 31px;
+    justify-content: center;
+}
+
+div.frase p {
+    width: 60%;
+}
+
+button.criar-topico {
+    position: absolute;
+    margin-top: -16px;
+    z-index: 1;
+    width: 133px;
+    height: 32px;
+    left: 50%;
+    margin-left: -66.5px;
+    background: linear-gradient(#FEB254 0%, #F0813D 100%);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+div.discussoes p {
+    text-align: center;
+    margin: 15px;
+    font-size: 14px;
+    color: #595959;
+}
+
+div.criar-topico p {
+    color: #5C5C5C;
+}
+
+div.form-topico form {
+    padding: 15px 15px 30px;
+}
+
+div.form-topico hr {
+    margin: 15px 0 0;
+}
+
+div.form-topico form label {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+div.form-topico input {
+    width: 100%;
+}
+
+div.form-topico textarea {
+    height: 82px;
+}
+
+div.enviar-form {
+    background-color: #EAF1F2;
+}
+
+button.enviar {
+    float: right;
+    background: linear-gradient(#FEB154 0%, #F1833E 100%);
+    font-size: 15px;
+    font-weight: 700;
+    width: 205px;
+    height: 37px;
+    border-radius: 0;
+}
+
+div.novo-topico {
+    text-align: center;
+}
+
+div.novo-topico p {
+    margin-top: 18px;
+}
+
+div.novo-topico a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #F48F44;
+    margin-top: 29px;
+}
+
+div.novo-topico hr {
+    margin-top: 40px;
+}
+
+button.criar-novo-topico {
+    position: absolute;
+    margin-top: 47px;
+    z-index: 1;
+    width: 235px;
+    height: 32px;
+    left: 50%;
+    margin-left: -120.5px;
+    background: linear-gradient(#FEB254 0%, #F0813D 100%);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+div.aguardando {
+    position: relative;
+    height: 178px;
+}
+
+div.mensagem {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #E7E7E7;
+    opacity: 90%;
+    text-align: center;
+    padding: 35px;
+}
+
+div.mensagem img {
+    height: 25px;
+}
+
+div.mensagem h2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 8px;
+}
+
+div.mensagem a {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    line-height: 18.62px;
+}
+
+.animar {
+    display: block;
+    opacity: 1;
+}
+
+.animar-esconder {
+    display: none;
+}
+
+.animar-transicao.animar-esconder {
+    display: block;
+    opacity: 0;
+}
+
+.animar-transicao {
+    transition: opacity 0.3s linear;
+}
+
+div.perguntas {
+    text-align: left;
+    box-shadow: 5px 5px 4px #0000001f;
+    border: 1px solid #E7E7E7;
+    margin: 7.5px 15px;
+}
+
+div.corpo-pergunta {
+    padding: 18px 24px;
+}
+
+div.perguntas h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #ED7839;
+}
+
+div.perguntas h4 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #5C5C5C;
+    margin-bottom: 10px;
+}
+
+div.perguntas p {
+    font-size: 14px;
+    color: #4D4D4D;
+    margin: 0;
+    text-align: justify;
+    line-height: 17.5px;
+}
+
+div.botoes-pergunta {
+    margin-top: 10px;
+}
+
+i.dots {
+    font-size: 25px;
+}
+
+button.heart,
+button.heart:hover {
+    background-color: #ED7839;
+    color: #FFFFFF;
+    padding: 3px 7px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+button.reacao,
+button.reacao:focus,
+button.reacao:hover {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: #757575;
+}
+
+div.respostas div {
+    border: 1px solid #E7E7E7;
+    padding: 18px 24px 35px;
+}
+
+div.respostas p {
+    margin-right: 40px;
+}
+
+div.visto {
+    justify-content: space-between;
+    border: none !important;
+}
+
+div.expandido h4,
+div.respostas h4 {
+    font-weight: 700;
+}
+
+div.visto h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.5px;
+    margin-right: 14px;
 }
